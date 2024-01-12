@@ -23,6 +23,10 @@ body {
   font-family: "Sora", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   width: var(--container-width);
