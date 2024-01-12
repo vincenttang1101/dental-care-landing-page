@@ -1,5 +1,17 @@
+/* Common */
 * {
   box-sizing: border-box;
+}
+
+:root {
+  /* Color */
+  --primary-color: #2e80ce;
+
+  /* Background */
+  --header-bg: #10375c;
+
+  /* Width */
+  --container-width: 1170px;
 }
 
 html {
@@ -9,4 +21,64 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--container-width);
+  max-width: 100% - 48px;
+}
+
+/* Header */
+.header {
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  gap: 0.6em;
+  font-size: 1rem;
+}
+
+.header .logo__circle::before {
+  content: "";
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.header .logo__circle::after {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  content: "";
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header .logo_text {
+  line-height: 1.4em;
+  text-align: right;
+}
+
+.header .logo__brand {
+  display: block;
+  color: #fff;
+}
+
+.header .logo__brand--large {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.header .logo__brand--smile {
+  font-size: 1.2em;
+  font-weight: 300;
 }
