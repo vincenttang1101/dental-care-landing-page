@@ -33,12 +33,6 @@ a {
   max-width: 100% - 48px;
 }
 
-/* Header */
-.header {
-  min-height: 100vh;
-  background: var(--header-bg);
-}
-
 .logo {
   position: relative;
   display: flex;
@@ -46,7 +40,7 @@ a {
   font-size: 1rem;
 }
 
-.header .logo__circle::before {
+.logo__circle::before {
   content: "";
   display: inline-block;
   width: 3em;
@@ -55,7 +49,7 @@ a {
   background: var(--primary-color);
 }
 
-.header .logo__circle::after {
+.logo__circle::after {
   position: absolute;
   top: 1em;
   left: 1em;
@@ -67,22 +61,64 @@ a {
   background: #fff;
 }
 
-.header .logo_text {
+.logo_text {
   line-height: 1.4em;
   text-align: right;
 }
 
-.header .logo__brand {
+.logo__brand {
   display: block;
   color: #fff;
 }
 
-.header .logo__brand--large {
+.logo__brand--large {
   font-size: 1.8em;
   font-weight: 400;
 }
-
-.header .logo__brand--smile {
+.logo__brand--smile {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* Header */
+.header {
+  padding-top: 30px;
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top .navbar {
+  display: flex;
+  gap: 42px;
+}
+
+.header-top .navbar__link {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.header-top .navbar__item .navbar__link--active::before {
+  position: relative;
+  top: -2px;
+  left: -10px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header-top .navbar__link:hover,
+.header-top .navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
 }
