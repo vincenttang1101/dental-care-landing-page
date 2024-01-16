@@ -4,8 +4,10 @@
 }
 
 :root {
-  /* Color */
+  /* Color Text */
   --primary-color: #2e80ce;
+  --secondary-color: #575f66;
+  --accent-color-1: #10375c;
 
   /* Background */
   --header-bg: #10375c;
@@ -39,6 +41,19 @@ button {
   margin: 0 auto;
   width: var(--container-width);
   max-width: 100% - 48px;
+}
+
+.heading-lv2 {
+  color: var(--accent-color-1);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.heading-lv3 {
+  color: var(--accent-color-1);
+  font-weight: 600;
 }
 
 .btn {
@@ -224,4 +239,30 @@ button {
   width: 210px;
   height: 410px;
   border-radius: 0px 6px 6px 0px;
+}
+
+/* Main */
+.main {
+  margin-top: 170px;
+}
+
+/* Service Head*/
+.service-head {
+  text-align: center;
+}
+
+.service-head__desc {
+  margin: 18px auto 0;
+  max-width: 468px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+.service-img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
 }
