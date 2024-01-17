@@ -243,8 +243,9 @@ button {
 
 /* Service Head*/
 .service {
-  padding: 170px 0;
+  margin-top: 170px;
 }
+
 .service-head {
   text-align: center;
 }
