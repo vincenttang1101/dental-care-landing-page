@@ -227,6 +227,10 @@ button {
   align-items: center;
 }
 
+.header-hero__img {
+  object-fit: cover;
+}
+
 .header-hero__img:first-child {
   position: relative;
   width: 330px;
@@ -317,4 +321,70 @@ button {
 
 .all-service-btn {
   margin-top: 55px;
+}
+
+.work {
+  margin-top: 170px;
+}
+
+.work {
+  padding: 100px 135px 100px;
+  background: #f6fbff;
+}
+
+.work-head__desc {
+  margin-top: 18px;
+  max-width: 468px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+.work-list {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 46px;
+}
+
+.work-item {
+  padding: 43px 42px;
+  border-radius: 4px;
+  border: 16px solid #eaf6ff;
+}
+
+.work-item:hover {
+  transform: translateY(-16px);
+  transition: 0.25s;
+  border-color: var(--primary-color);
+}
+
+.work-item__icon {
+  width: 72px;
+  height: 72px;
+}
+
+.work-item__heading {
+  margin-top: 18px;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+.work-item__desc {
+  margin-top: 28px;
+  max-width: 254px;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.work-item__info-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
 }
