@@ -434,3 +434,87 @@ button {
 .abount-content__info-link {
   margin-top: 38px;
 }
+
+/* Member */
+.member {
+  margin-top: 170px;
+}
+
+.member__head {
+  text-align: center;
+}
+
+.member__info-cta {
+  margin-top: 38px;
+}
+
+.member__list {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.member-item {
+  flex: 1;
+}
+
+.member-item__thumbnail-wrapper {
+  padding-top: 28px;
+  border-radius: 6px;
+  background: #eaf6ff;
+  overflow: hidden;
+}
+
+.member-item__thumbnail-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.member-item__thumbnail-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: 290px;
+  object-fit: cover;
+  transition: 0.25s;
+}
+
+.member-item__info {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.member-item__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.member-item__desc {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.member__cta-group {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  column-gap: 18px;
+}
+
+.member__control-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: #fff;
+  cursor: pointer;
+}
+
+.member__control-btn:hover {
+  color: #fff;
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+}
