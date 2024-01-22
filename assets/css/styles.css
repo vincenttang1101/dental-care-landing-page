@@ -510,11 +510,11 @@ button {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   background: #fff;
-  cursor: pointer;
 }
 
 .member__control-btn:hover {
   color: #fff;
   border-color: var(--primary-color);
   background: var(--primary-color);
+  cursor: pointer;
 }
