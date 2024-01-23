@@ -452,10 +452,13 @@ button {
   margin-top: 70px;
   display: flex;
   column-gap: 30px;
+  overflow: hidden;
 }
 
 .member-item {
-  flex: 1;
+  width: calc((100% / 4) - 30px);
+  flex-shrink: 0;
+  /* transform: translateX(calc(-100% * 4 - 120px)); */
 }
 
 .member-item__thumbnail-wrapper {
