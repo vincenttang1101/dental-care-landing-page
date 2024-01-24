@@ -23,6 +23,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+  height: 10000px;
 }
 
 a {
@@ -520,4 +521,45 @@ button {
   border-color: var(--primary-color);
   background: var(--primary-color);
   cursor: pointer;
+}
+
+/* Install */
+.install {
+  margin-top: 265px;
+}
+
+.install__inner {
+  padding: 0 70px;
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--primary-color);
+}
+
+.install__app-image {
+  margin-top: -95px;
+  display: block;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+
+.install__desc {
+  margin-top: 18px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+.install__platform {
+  display: flex;
+  gap: 28px;
+  margin-top: 38px;
 }
