@@ -690,14 +690,19 @@ button {
 .appointment__inner {
   padding: 100px 0;
   text-align: center;
-  background: #f6fbff;
+  background: hsl(207, 100%, 98%);
 }
 
-.appointment__desc::before {
+.appointment__heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.appointment__heading:after {
   content: "";
   position: absolute;
-  top: -18px;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
   display: block;
   width: 136px;
@@ -706,7 +711,6 @@ button {
 }
 
 .appointment__desc {
-  position: relative;
   margin: 38px auto;
   width: 617px;
   color: var(--secondary-color);
