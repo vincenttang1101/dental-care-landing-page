@@ -648,11 +648,21 @@ button {
   border: 1px solid #e8ebee;
 }
 
+.blog__post-thumbnail-wrapper {
+  height: 172px;
+  overflow: hidden;
+}
+
 .blog__post-thumbnail {
   width: 100%;
-  height: 172px;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
+  transition: 0.2s;
+}
+
+.blog__post-item:hover .blog__post-thumbnail {
+  transform: scale(1.1);
 }
 
 .blog__info {
@@ -690,6 +700,7 @@ button {
 .appointment__inner {
   padding: 100px 0;
   text-align: center;
+  border-radius: 4px;
   background: hsl(207, 100%, 98%);
 }
 
