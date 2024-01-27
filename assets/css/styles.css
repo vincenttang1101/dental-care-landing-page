@@ -681,3 +681,36 @@ button {
   font-size: 1.4rem;
   font-weight: 500;
 }
+
+/* Appointment */
+.appointment {
+  margin-top: 170px;
+}
+
+.appointment__inner {
+  padding: 100px 0;
+  text-align: center;
+  background: #f6fbff;
+}
+
+.appointment__desc::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 136px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.appointment__desc {
+  position: relative;
+  margin: 38px auto;
+  width: 617px;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
